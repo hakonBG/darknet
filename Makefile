@@ -99,3 +99,10 @@ results:
 clean:
 	rm -rf $(OBJS) $(SLIB) $(ALIB) $(EXEC) $(EXECOBJ) $(OBJDIR)/*
 
+
+PREFIX := /usr/local
+
+install:
+	install -m 644 libdarknet.a libdarknet.so $(DESTDIR)$(PREFIX)/lib/
+	install -m 644 include/darknet.h $(DESTDIR)$(PREFIX)/include/
+
