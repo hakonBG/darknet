@@ -1,2 +1,1 @@
-from darknet import *
-
+from darknet.darknet import *
